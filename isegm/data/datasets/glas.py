@@ -19,10 +19,7 @@ class GlasDataset(ISDataset):
         self.dataset_samples = dataset['image']
         self.masks_paths = dataset['mask']
         self.dataset_name = 'Glas'
-#         print(self.dataset_samples)
-#         print(self.masks_paths)
-# if __name__ == '__main__':
-#     dataset = GlasDataset(dataset_path='/staff/wanghn/torch_projects/ritm_interactive_segmentation/datasets/Glas')
+
     def get_sample(self, index) -> DSample:
         image_name = self.dataset_samples[index]
         image_path = str(self.dataset_path / image_name)

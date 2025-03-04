@@ -41,9 +41,6 @@ class AllforInferenceDataset(ISDataset):
         
         mask_path = self.masks_paths[index]
         
-        # if not image_path.startswith('staff'):
-        #     image_path = '/staff/wanghn/torch_projects/ritm_interactive_segmentation/' + image_path
-        #     mask_path = '/staff/wanghn/torch_projects/ritm_interactive_segmentation/' + mask_path
         
         # print(image_path)
 

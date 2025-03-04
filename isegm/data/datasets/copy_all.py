@@ -19,10 +19,7 @@ class cpAllDataset(ISDataset):
         
         self.dataset_samples = dataset['image']
         self.masks_paths = dataset['mask']
-#         print(self.dataset_samples)
-#         print(self.masks_paths)
-# if __name__ == '__main__':
-#     dataset = GlasDataset(dataset_path='/staff/wanghn/torch_projects/ritm_interactive_segmentation/datasets/Glas')
+
     def get_sample(self, index) -> DSample:
         image_path = self.dataset_samples[index]
         
