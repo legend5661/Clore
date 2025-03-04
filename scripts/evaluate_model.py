@@ -19,7 +19,7 @@ from isegm.inference.evaluation import evaluate_dataset
 def parse_args():
     parser = argparse.ArgumentParser()
 
-    parser.add_argument('mode', choices=[ 'CDNet', 'Baseline', 'FocalClick', 'OriFocalClick','NoBRS', 'RGB-BRS', 'DistMap-BRS',
+    parser.add_argument('mode', choices=[ 'Baseline', 'Clore', 'OriFocalClick','NoBRS', 'RGB-BRS', 'DistMap-BRS',
                                          'f-BRS-A', 'f-BRS-B', 'f-BRS-C'],
                         help='')
 

@@ -2,9 +2,9 @@
 GPUS='0'
 WORKERS=6
 BATCH_SIZE=40
-EXP_NAME='focalclick_wtt'
+EXP_NAME=''
 MODE='train-val'
-RESUM_DIR='008_focalclick_wtt'
+RESUM_DIR=''
 START_EPOCH=98
 
 python train.py models/focalclick/hrnet18_w18_all.py \

@@ -1,5 +1,5 @@
 # CUDA_VISIBLE_DEVICES=0
-MODEL_DIR='experiments/focalclick/hrnet18v2_w18_all/008_focalclick_wtt'
+MODEL_DIR=''
 CHECKPOINT_NAME='val_iou=0.83_118'
 DATASETS='bloodcell,glas,monuseg,nucls,digestpath,bns,camelyon17,camelyon16'
 GPUS='0'

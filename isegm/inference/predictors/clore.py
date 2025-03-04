@@ -5,7 +5,7 @@ from isegm.inference.transforms import AddHorizontalFlip, SigmoidForPred, LimitL
 from isegm.utils.crop_local import  map_point_in_bbox,get_focus_cropv1, get_focus_cropv2, get_object_crop, get_click_crop
 import torchvision.ops.roi_align as roi_align
 
-class FocalPredictor(object):
+class ClorePredictor(object):
     def __init__(self, model, device,
                  net_clicks_limit=None,
                  with_flip=False,

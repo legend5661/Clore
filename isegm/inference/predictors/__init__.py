@@ -1,6 +1,6 @@
 from .cdnet import DiffisionPredictor
 from .baseline import BaselinePredictor
-from .focalclick import FocalPredictor
+from .clore import ClorePredictor
 from.focalclick_ori import OriFocalPredictor
 from .brs import InputBRSPredictor, FeatureBRSPredictor, HRNetFeatureBRSPredictor
 from .brs_functors import InputOptimizer, ScaleBiasOptimizer
@@ -53,10 +53,10 @@ def get_predictor(net, brs_mode, device,
             predictor_params_.update(predictor_params)
         predictor = DiffisionPredictor(net, device, zoom_in=zoom_in, with_flip=with_flip, infer_size =infer_size, **predictor_params_)
     
-    elif brs_mode == 'FocalClick':
+    elif brs_mode == 'Clore':
         if predictor_params is not None:
             predictor_params_.update(predictor_params)
-        predictor = FocalPredictor(net, device, zoom_in=zoom_in, with_flip=with_flip, infer_size =infer_size, focus_crop_r= focus_crop_r, **predictor_params_)
+        predictor = ClorePredictor(net, device, zoom_in=zoom_in, with_flip=with_flip, infer_size =infer_size, focus_crop_r= focus_crop_r, **predictor_params_)
 
     elif brs_mode == 'OriFocalClick':
         if predictor_params is not None:

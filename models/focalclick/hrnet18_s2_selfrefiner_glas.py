@@ -4,7 +4,7 @@ from isegm.data.compose import ComposeDataset,ProportionalComposeDataset
 import torch.nn as nn
 from isegm.data.aligned_augmentation import AlignedAugmentator
 from isegm.engine.selfrefiner_trainer import ISTrainer
-# from isegm.engine.focalclick_trainer import ISTrainer
+
 
 def main(cfg):
     model, model_cfg = init_model(cfg)
